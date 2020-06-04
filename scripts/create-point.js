@@ -28,6 +28,7 @@ function getCities(event) {
   fetch(url)
     .then((response) => response.json())
     .then((cities) => {
+      citySelect.innerHTML = "";
       for (city of cities) {
         citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
       }
