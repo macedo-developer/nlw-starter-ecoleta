@@ -1,5 +1,4 @@
-<h2 align="center">Welcome</h2>
-<h1 align="center"><img src="./public/assets/logo.svg" alt="Ecoleta"/></h1>
+<h1 align="center"><p>Welcome</p><img src="./public/assets/logo.svg" alt="Ecoleta"/></h1>
 <h2 align="center">NLW#1 Starter</h2>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
@@ -14,7 +13,9 @@
 > Project developed at Next Level Week offered by Rocketseat, during the environment week 2020.
 
 <p>Example</p>
+<p align="center">
 <img src="./public/assets/demostre.gif" alt="Example"/>
+</p>
 
 ## Install
 
