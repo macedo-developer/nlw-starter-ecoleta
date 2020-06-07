@@ -12,7 +12,8 @@
 
 > Project developed at Next Level Week offered by Rocketseat, during the environment week 2020.
 
-<p>Example</p>
+## Example
+
 <p align="center">
 <img src="./public/assets/demostre.gif" alt="Example"/>
 </p>
