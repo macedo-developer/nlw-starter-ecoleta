@@ -34,7 +34,9 @@ yarn run start
 
 - express >= 4.17.1
 - nunjucks >= 3.2.1
-  (devDependencies)
+
+## Dev Dependencies
+
 - nodemon >= 2.0.4
 
 ## Author
