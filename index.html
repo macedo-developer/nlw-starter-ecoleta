@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+
     <link rel="stylesheet" href="./styles/responsive.css" />
   </head>
   <body>
@@ -38,5 +40,30 @@
         </main>
       </div>
     </div>
+
+    <div id="modal" class="hide">
+      <div class="content">
+        <header>
+          <h1>Pontos de coleta</h1>
+          <a href="#">Fechar</a>
+        </header>
+        <form action="./search-results.html">
+          <label for="search">Cidade</label>
+          <div class="search field">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Ex: João Pessoa"
+            />
+            <button type="submit">
+              <img src="./assets/search.svg" alt="Buscar" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
