@@ -1,11 +1,18 @@
 {
-  "name": "frontend",
+  "name": "frontend-nlw-ecoleta",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/server.js",
   "scripts": {
-    "dev": "node ./src/server.js"
+    "dev": "nodemon ./src/server.js",
+    "start": "node ./src/server.js"
   },
-  "repository": "https://github.com/macedo-developer/nlw-starter-frontend.git",
+  "repository": "https://github.com/macedo-developer/nlw-starter-ecoleta.git",
   "author": "macedo-developer <macedorenata.developer@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
