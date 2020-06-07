@@ -16,6 +16,14 @@
     transform: translateX(-50%);
   }
 
+  #page-create-point form fieldset .field-group {
+    flex-direction: column;
+  }
+
+  #page-create-point form fieldset .field-group .field + .field {
+    margin-left: 0;
+  }
+
   #page-home main {
     align-items: center;
   }
@@ -38,5 +46,33 @@
 @media (max-height: 760px) {
   #page-home {
     background-position-y: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  #page-create-point fieldset .items-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #page-create-point fieldset legend {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 380px) {
+  #page-create-point form h1 {
+    text-align: center;
+  }
+
+  #page-create-point fieldset .items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #page-create-point form {
+    padding: 30px;
+  }
+
+  #page-create-point form button {
+    width: 225px;
   }
 }
