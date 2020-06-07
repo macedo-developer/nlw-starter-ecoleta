@@ -30,6 +30,13 @@ yarn install
 yarn run start
 ```
 
+## Dependencies
+
+- express >= 4.17.1
+- nunjucks >= 3.2.1
+  (devDependencies)
+- nodemon >= 2.0.4
+
 ## Author
 
 👤 **macedo-developer <macedorenata.developer@gmail.com>**
