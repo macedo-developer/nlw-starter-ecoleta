@@ -1,5 +1,6 @@
 {
   "name": "frontend-nlw-ecoleta",
+  "description": "Project developed at Next Level Week offered by Rocketseat, during the environment week 2020.",
   "version": "1.0.0",
   "main": "./src/server.js",
   "scripts": {
