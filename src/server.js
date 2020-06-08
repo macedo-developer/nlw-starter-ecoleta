@@ -40,10 +40,11 @@ server.post("/savepoint", (req, res) => {
 
   function afterInsertData(error) {
     if (error) {
-      return console.log(error);
+      console.log(error);
+      return res.send("Erro ao cadastrar");
     }
 
-    return res.render("index.html");
+    return res.render("create-point.html", { saved: true });
   }
 
   db.run(query, values, afterInsertData);
