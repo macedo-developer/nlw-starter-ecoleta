@@ -34,6 +34,7 @@ yarn run start
 
 - express >= 4.17.1
 - nunjucks >= 3.2.1
+- sqlite3 >= 4.2.0
 
 ## Dev Dependencies
 
