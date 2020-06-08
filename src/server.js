@@ -52,18 +52,23 @@ server.post("/savepoint", (req, res) => {
 
 server.get("/search", (req, res) => {
   const { search } = req.query;
-  db.all("SELECT * FROM places WHERE city = ?", [search], function (
-    error,
-    rows
-  ) {
-    if (error) {
-      return console.log(error);
+
+  if (search === "") {
+    return res.render("search-results.html", { tota: 0 });
+  }
+
+  db.all(
+    `SELECT * FROM places WHERE city LIKE '%${search}%' or state LIKE '%${search}%'`,
+    function (error, rows) {
+      if (error) {
+        return console.log(error);
+      }
+
+      const total = rows.length;
+
+      return res.render("search-results.html", { places: rows, total });
     }
-
-    const total = rows.length;
-
-    return res.render("search-results.html", { places: rows, total });
-  });
+  );
 });
 
 server.listen(3001);

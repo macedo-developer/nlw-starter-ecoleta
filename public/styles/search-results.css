@@ -1,11 +1,17 @@
+body {
+  background-color: #a8bddb;
+}
+
 body::after {
   content: "";
 
-  background-color: #a8bddb;
+  background-color: #6589be;
 
-  position: fixed;
+  position: absolute;
 
-  top: 270px;
+  height: 16rem;
+
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
